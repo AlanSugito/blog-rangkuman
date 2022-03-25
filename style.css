@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'aesthetik_script';
+    src: url('aesthetik_script_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: 400;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.nav{
+    width: 3rem;
+    position: fixed;
+    z-index: 99;
+    top: 2rem;
+    left: 2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.close-nav{
+    width: 2rem;
+    transition: .3s;
+}
+nav{
+    padding: 20px;
+    width: 30vw;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    padding-top: 8rem;
+    top: 0;
+    overflow-y: scroll;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: .5s;
+    
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        width: 50vw;
+    }
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    
+}
+h1{
+    font-family: 'aesthetik_script';color: white;
+}
+h2{
+    margin-bottom: .5rem 
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+.listbar{
+    margin-left: 1.2rem;
+    margin-bottom: .5rem;
+}
+.list-item{
+    line-height: 2rem;
+    
+}
+.list-item > a {
+    color: black;
+}
+.list-item > a:hover{
+    color: grey;
+}
+.list-materi{
+    list-style: circle;
+}
+.hero{
+    background-image: url(hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-hero{
+    text-align: center;
+    animation: fade-up 1s forwards;
+}
+
+@keyframes fade-up {
+    from{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+}
+.btn > a{
+    color: white;
+    font-size: 1.4em;
+}
+.hero .text-hero > h2{
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+.text-hero > h3,h4{
+    color: white;
+}
+.active-nav{
+    transition: .5s;
+    transform: translateX(0);
+}
+article{
+    padding: 2rem;
+}
+.btn{
+    border-radius: 50%;
+    padding: 2rem;
+    width: 7rem;
+    height: 7rem;
+    background-color: #3D3C3C;
+    color: white;
+    border: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+}
+.materi-header{
+    color: #222;
+}
+.materi{
+    margin: 2rem 0;
+    width: 80vw;
+    border: 3px solid #3D3C3C;
+    padding: 20px;
+
+}
+.materi-lists{
+    margin-left: 3rem;
+}
+.pertemuan1 > h3, .pertemuan2 > h3{
+    text-align: center;
+}
+.pertemuan1,.pertemuan2{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: #3D3C3C;
+    padding: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+footer > p {
+    color: white;
+    
+}
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.social-media > ul{
+    display: flex;
+    gap: 1.3rem;
+    font-size: 1.5rem;
+    
+}
+.icon > a{
+    color: white;
+}
+
+
+
+footer .contact > h5{
+    font-size: 1.5rem;
+    color: white;
+}
